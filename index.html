@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7dfe875206.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <title>KMKM - Kursus Mahir Kitab Al-Mabruk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+        .animated-background {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+            background: url('image1.jpg') no-repeat center center;
+            background-size: cover;
+            animation: slideBackground 15s infinite;
+        }
+    
+        @keyframes slideBackground {
+            0% { background: url('Images/GAMBAR 1.jpeg') no-repeat center center; background-size: cover; }
+            33% { background: url('Images/GAMBAR 2.jpeg') no-repeat center center; background-size: cover; }
+            66% { background: url('Images/GAMBAR 1.jpeg') no-repeat center center; background-size: cover; }
+            100% { background: url('Images/GAMBAR 2.jpeg') no-repeat center center; background-size: cover; }
+        }
+    
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    
+        .text-center {
+            text-align: center;
+        }
+    
+        .text-4xl {
+            font-size: 2.25rem;
+        }
+    
+        .font-bold {
+            font-weight: 700;
+        }
+    
+        .text-gray-800 {
+            color: #2d3748;
+        }
+    
+        .text-gray-600 {
+            color: #718096;
+        }
+    
+        .mt-4 {
+            margin-top: 1rem;
+        }
+    
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+    
+        .inline-block {
+            display: inline-block;
+        }
+    
+        .bg-blue-500 {
+            background-color: #3b82f6;
+        }
+    
+        .text-white {
+            color: #ffffff;
+        }
+    
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    
+        .rounded {
+            border-radius: 0.375rem;
+        }
+    </style>
+    
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Title -->
+            <div class="flex items-center">
+                <img src="Images/logo.png" alt="Logo KMKM" class="h-10 w-10 mr-2"> <!-- Ganti 'logo.png' dengan path gambar logomu -->
+                <a href="#" class="text-white text-xl font-bold">KMKM</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white">About</a>
+                <a href="#courses" class="text-gray-300 hover:text-white">Courses</a>
+                <a href="#register" class="text-gray-300 hover:text-white">Contact</a>
+                <a href="#register" class="text-gray-300 hover:text-white">Daftar Sekarang</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#" class="block text-gray-300 hover:text-white px-4 py-2">Home</a>
+            <a href="#about" class="block text-gray-300 hover:text-white px-4 py-2">About</a>
+            <a href="#courses" class="block text-gray-300 hover:text-white px-4 py-2">Courses</a>
+            <a href="#register" class="block text-gray-300 hover:text-white px-4 py-2">Contact</a>
+            <a href="#register" class="block text-gray-300 hover:text-white px-4 py-2">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+   
+        <div class="animated-background">
+            <main class="container mx-auto py-10">
+                <!-- Hero Section -->
+                <section class="text-center py-10">
+                    <h1 class="text-4xl font-bold text-gray-800">Selamat Datang di KMKM</h1>
+                    <p class="text-gray-600 mt-4">Kursus Mahir Kitab Al-Mabruk - Solusi Praktek Membaca Kitab Arab Tanpa Harakat</p>
+                    <a href="#register" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded">Gabung Sekarang</a>
+                </section>
+            </main>
+        </div>
+   
+
+        <!-- About Section -->
+        <section id="about" class="py-10 bg-white">
+            <div class="container mx-auto text-center">
+                <img src="Images/logo.png" alt="About KMKM" class="mb-6 mx-auto" style="max-width: 20%; height: auto;"> <!-- Ganti 'about-image.png' dengan path gambar tentang kami -->
+                <h2 class="text-3xl font-bold text-gray-800">Tentang Kami</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">KMKM adalah kursus yang dirancang untuk membantu
+                    Anda memahami kitab dengan mudah. Kami menawarkan berbagai program pembelajaran yang terstruktur dan
+                    interaktif, dipandu oleh pengajar yang berpengalaman.</p>
+        </section>
+
+       
+    
+
+    <!-- Keunggulan Section -->
+<h2 class="text-3xl font-bold text-gray-800 text-center mt-16">Apa Keunggulan KMKM Dibandingkan dengan yang lain?</h2>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center text-white">
+        <img src="Images/logo.png" alt="Logo KMKM" class="h-12 w-12 mx-auto mb-4"> <!-- Logo KMKM -->
+        <h3 class="text-xl font-bold">Metode Magic and Enjoy</h3>
+        <p class="mt-4">Menggunakan metode yang ajaib (magic) dan enjoy dalam waktu yang singkat. Disampaikan secara sederhana bahkan enjoyfull learning. 
+            menggunakan berbagai tips membaca dan menterjemahkan yang unik dan cerdas, sehingga buku ini berbeda
+        dengan buku-buku kaidah atau tata bahasa arab yang beredar</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center text-white">
+        <img src="Images/logo.png" alt="Logo KMKM" class="h-12 w-12 mx-auto mb-4"> <!-- Logo KMKM -->
+        <h3 class="text-xl font-bold">Pembelajaran dinamis dengan media dan praktek langsung</h3>
+        <p class="mt-4">Nikmati proses belajar dengan metode menarik yang menggabungkan lagu-lagu bermanfaat untuk mempermudah
+            penguasaan kaidah nahwu dan shorof, serta memanfaatkan kitab-kitab penting seperti Taqrib, safinatun Najah, Qur'an, Hadits, dan kitab kuning lainnya.
+            metode ini menekankan praktek langsung agar materi lebih mudah diingat dan diterapkan.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center text-white">
+        <img src="Images/logo.png" alt="Logo KMKM" class="h-12 w-12 mx-auto mb-4"> <!-- Logo KMKM -->
+        <h3 class="text-xl font-bold">Pelatihan intensif 3 bulan Online</h3>
+        <p class="mt-4">Bergabunglah dalam pelatihan intensif 3 bulan kami melalui grup WA khusus! dengan video tutorial praktis dan sederhana serta dibimbing dari pengajar berpengalaman.
+            anda akan mendapatkan pembelajaran yang mudah dipahami dan langsung diterapkan. jangan lewatkan kesempatan untuk belajar secara istiqomah dan mencapai
+            hasil maksimal!.</p>
+    </div>
+</div>
+
+    </div>
+       <!-- Courses Section -->
+<section id="courses" class="py-10">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">Kursus yang Kami Tawarkan</h2>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800">Kursus Dasar</h3>
+            <p class="text-gray-600 mt-2">Memahami dasar-dasar kitab dan kaidah dasar pembelajaran.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800">Kursus Lanjutan</h3>
+            <p class="text-gray-600 mt-2">Pendalaman materi kitab dengan teknik pembelajaran tingkat lanjut.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800">Kursus Intensif</h3>
+            <p class="text-gray-600 mt-2">Kursus khusus dengan fokus intensif pada penguasaan materi kitab.</p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900">
+          Daftar Isi Buku KMKM-Kursus Mahir Kitab Al-Mabruk
+        </h2>
+      </div>
+  
+      <div class="space-y-4 text-gray-800">
+        <div class="flex justify-between">
+          <span>A. Target Arabic Camp dan Teknik Mengajar Cepat</span>
+          <span>Hal. 1</span>
+        </div>
+        <div class="flex justify-between">
+          <span>B. Dasar-dasar Pengantar Umum Istilah Bahasa Arab (1-7)</span>
+          <span>Hal. 5</span>
+        </div>
+        <div class="flex justify-between">
+          <span>C. Definisi Jenis-jenis Isim (Kata Benda)</span>
+          <span>Hal. 15</span>
+        </div>
+        <div class="flex justify-between">
+          <span>D. Tenda I'rob pada Jenis-jenis Isim</span>
+          <span>Hal. 25</span>
+        </div>
+        <div class="flex justify-between">
+          <span>E. Jenis-jenis Fi'il (Kata Kerja)</span>
+          <span>Hal. 35</span>
+        </div>
+        <div class="flex justify-between">
+          <span>F. Tanda I'rob pada Jenis-jenis Fi'il</span>
+          <span>Hal. 45</span>
+        </div>
+        <div class="flex justify-between">
+          <span>G. Cara Buat Jumlah Ismiyah dan Fi'liyah</span>
+          <span>Hal. 55</span>
+        </div>
+        <div class="flex justify-between">
+          <span>H. Kedudukan Kata dalam Jumlah dan I'robnya</span>
+          <span>Hal. 65</span>
+        </div>
+        <div class="flex justify-between">
+          <span>I. Arti Kode Bahasa Jawa</span>
+          <span>Hal. 75</span>
+        </div>
+        <div class="flex justify-between">
+          <span>J. Macam Kalimat Huruf (Jer, Nasob, Jazem, Kana, Inna, Dzonna)</span>
+          <span>Hal. 85</span>
+        </div>
+        <div class="flex justify-between">
+          <span>K. Macam-macam Khobar dalam Jumlah Ismiyah</span>
+          <span>Hal. 95</span>
+        </div>
+        <div class="flex justify-between">
+          <span>L. Khobar Muqoddam</span>
+          <span>Hal. 105</span>
+        </div>
+        <div class="flex justify-between">
+          <span>M. Fi'il Muta'addi dan Fi'il Lazim (Transitif dan Intransitif)</span>
+          <span>Hal. 115</span>
+        </div>
+        <div class="flex justify-between">
+          <span>N. Mabni Maklum dan Mabni Majhul</span>
+          <span>Hal. 125</span>
+        </div>
+        <div class="flex justify-between">
+          <span>O. Struktur Kata: Man'ut + Na'at (Isim/Kata Benda + Sifatnya)</span>
+          <span>Hal. 135</span>
+        </div>
+        <div class="flex justify-between">
+          <span>P. Struktur Kata: Mudof + Mudof Ileh (Kata Benda Majmuk)</span>
+          <span>Hal. 145</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Q. Struktur Kata: Dlorof Makan dan Zaman</span>
+          <span>Hal. 155</span>
+        </div>
+        <div class="flex justify-between">
+          <span>R. At Tadribat/Latihan Soal</span>
+          <span>Hal. 165</span>
+        </div>
+        <div class="flex justify-between">
+          <span>S. Cara Menerjemahkan dari Bahasa Arab ke Bahasa Indonesia</span>
+          <span>Hal. 175</span>
+        </div>
+        <div class="flex justify-between">
+          <span>T. Sorof 1-9</span>
+          <span>Hal. 185</span>
+        </div>
+        <div class="flex justify-between">
+          <span>U. Cara Analisa Nahwu dan Shorof</span>
+          <span>Hal. 195</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-900">
+        Tonton Video Pembelajaran KMKM
+      </h2>
+      <p class="text-gray-700 mt-4">
+        Pelajari lebih lanjut tentang metode belajar melalui video berikut ini.
+      </p>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="w-full sm:w-3/4 lg:w-2/3 aspect-w-16 aspect-h-9">
+        <iframe 
+          class="rounded-lg shadow-lg w-full h-full" 
+          src="https://www.youtube.com/embed/DvxeXwLSGSg" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-100 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        Attention!!
+      </h2>
+      <p class="mt-4 text-lg leading-6 text-gray-600">
+        Mulai pembelajaran pada tanggal <span class="font-semibold">1 Oktober 2024</span>. 
+        Setiap hari Rabu dan Kamis, pukul 19.30 - 21.00. Pilih metode belajar yang sesuai dengan kebutuhan Anda.
+      </p>
+    </div>
+
+    <!-- Teks Bergerak -->
+    <div class="overflow-hidden whitespace-nowrap">
+      <p class="animate-marquee text-lg font-semibold text-indigo-600">
+        Daftar sekarang! Mulai kelas 1 Oktober 2024, setiap Rabu dan Kamis, pukul 19.30 - 21.00 | Online & Offline | Biaya Offline: Rp.150.000 per murid (2 minggu) | SEGERA!! Nikmati Promo 99 nya !!!
+      </p>
+    </div>
+    
+    <div class="mt-10 flex flex-col lg:flex-row justify-center gap-8">
+      <!-- Online Learning -->
+      <div class="flex-1 bg-white rounded-lg shadow-lg p-8">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Belajar Online</h3>
+        <p class="text-gray-600 mb-6">
+          Nikmati kenyamanan belajar dari rumah. Kelas online diselenggarakan melalui platform interaktif yang memungkinkan tanya jawab langsung dengan pengajar. Anda akan menerima materi dalam format video yang bisa diakses kapan saja.
+        </p>
+        <a href="#" class="inline-block text-white bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-lg font-medium">
+          Daftar Kelas Online
+        </a>
+      </div>
+      
+      <!-- Offline Learning -->
+      <div class="flex-1 bg-white rounded-lg shadow-lg p-8">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Belajar Offline</h3>
+        <p class="text-gray-600 mb-6">
+          Ikuti kelas tatap muka di lembaga kami dengan suasana belajar yang kondusif. Biaya per murid adalah Rp.150.000 untuk dua minggu. Pastikan Anda mendapatkan bimbingan langsung dan interaksi dengan sesama peserta.
+        </p>
+        <a href="#" class="inline-block text-white bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-lg font-medium">
+          Daftar Kelas Offline
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+  }
+</style>
+
+<section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+      
+      <!-- Bagian Tulisan -->
+      <div class="lg:w-1/2 lg:pr-8">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+          Bergabunglah dengan KMKM Sekarang!
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Tingkatkan pemahaman kitab Anda dengan mengikuti kursus yang interaktif dan mendalam. Kami menawarkan 
+          pengalaman belajar yang fleksibel dengan pilihan online dan offline. Pendaftaran dimulai tanggal 
+          <span class="font-semibold">25 Agustus 2024</span>.
+        </p>
+        <a href="#" class="inline-block bg-indigo-600 text-white px-5 py-3 rounded-lg font-medium shadow hover:bg-indigo-500">
+          Daftar Sekarang
+        </a>
+      </div>
+  
+      <!-- Bagian Gambar -->
+      <div class="lg:w-1/2 lg:pl-8 mt-10 lg:mt-0">
+        <img src="Images/poster1.jpeg" alt="Gambar Orang Belajar" class="w-full rounded-lg shadow-lg">
+      </div>
+  
+    </div>
+  </section>
+
+  
+<section class="container mx-auto py-10">
+    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="Images/belajar.jpeg" alt="Promo Poster" class="h-96 w-auto mb-6"> <!-- Replace 'your-image-path.png' with the correct path to your image -->
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Promo Spesial KMKM</h2>
+            <p class="text-lg text-gray-600 mb-4">Harga Normal: <span class="line-through">Rp. 575.000</span></p>
+            <p class="text-2xl font-bold text-red-500 mb-4">Harga Promo: Rp. 99.000</p>
+            <p class="text-lg text-gray-600 mb-4">Hemat: Rp. 476.000</p>
+            <a href="#register" class="mt-6 inline-block bg-green-500 text-white py-2 px-4 rounded">Daftar Sekarang</a>
+        </div>
+    </div>
+</section>
+
+<section>
+<h2 class="text-3xl font-bold text-gray-800 text-center mt-16">Gabung dan dapatkan paket program KMKM!</h2>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center text-white">
+       
+        <h3 class="text-xl font-bold">Buku panduan praktis membaca dan menerjemah kitab al mabruk</h3>
+        <p class="mt-4">Buku panduan ini,hasil pengalaman dan penelitian bertahun-tahun penulis, 
+            menawarkan pendekatan sederhana dan berbahasa Indonesia. Ideal untuk pemula, dilengkapi tips praktis membaca
+             dan menerjemah kitab bahasa Arab.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center text-white">
+       
+        <h3 class="text-xl font-bold">Bimbingan materi nahwu shorof</h3>
+        <p class="mt-4">Bimbingan materi yang cukup dalam komunitas grup WA, materi-materi berupa rekaman video youtube yang bisa
+            diakses gratis untuk membantu pemahaman nahwu shorof dasar yang praktis dan menarik</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center text-white">
+       
+        <h3 class="text-xl font-bold">Kitab Kuning untuk praktek</h3>
+        <p class="mt-4">Kitab praktek ini berisi: kitab-kitab karangan ulama-ulama salafus sholihin dengan bidang-bidang ilmu yang berbeda-beda antara lain
+            : bidang hadist (Arbain Nawawi), bidang fiqih(Taqrib/safinatun najah), bidang akhlak(Ayyuhal Walad) dll.
+        </p>
+    </div>
+</section>
+
+        <!-- Register Section -->
+<section id="register" class="py-10 bg-white text-center">
+    <div class="flex justify-center items-center mt-2">
+        <i class="fab fa-whatsapp text-green-500 text-5xl mr-2"></i>
+    <h2 class="text-3xl font-bold text-gray-800">+62 823 3277 9990</h2>
+    </div>
+    <p class="text-gray-600 mt-4">Jangan lewatkan kesempatan untuk menjadi bagian dari KMKM. Yuk!! nikmati promo yang ada!!. Daftar sekarang
+        dan mulai perjalanan Anda dalam memahami kitab!</p>
+    <a href="https://wa.me/082332779990" target="_blank" class="mt-6 inline-block bg-green-500 text-white py-2 px-5 rounded">Mulai
+        Pendaftaran</a>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+   <!-- Footer -->
+<footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Logo and Website Title -->
+        <div class="flex flex-col items-center md:items-start">
+            <img src="Images/logo.png" alt="Logo KMKM" class="h-16 w-16 mb-4"> <!-- Ganti 'logo.png' dengan path gambar logomu -->
+            <h2 class="text-xl font-bold">KMKM - Kursus Mahir Kitab Al-Mabruk</h2>
+            <p class="text-gray-400 mt-2">Solusi praktek membaca kitab arab tanpa harokat</p>
+            <p class="text-gray-400 mt-2">dengan metode yang mudah, praktis, dan dalam waktu yang relatif singkat</p>
+        </div>
+        
+        <!-- Contact Information -->
+<div class="flex flex-col items-center md:items-start">
+    <h3 class="text-lg font-semibold">Kontak Kami</h3>
+    <ul class="mt-4 space-y-2">
+        <li class="flex items-center">
+            <i class="fab fa-whatsapp h-6 w-6 text-green-500 mr-2"></i>
+            <a href="https://wa.me/+6282332779990" target="_blank" class="text-gray-400 hover:text-white">+62 823 3277 9990</a>
+        </li>
+        <li class="flex items-center">
+            <i class="fab fa-instagram h-6 w-6 text-pink-500 mr-2"></i>
+            <a href="https://www.instagram.com/kmkm" target="_blank" class="text-gray-400 hover:text-white">admin@kursusmahirkitab.com</a>
+        </li>
+        <li class="flex items-center">
+            <i class="fab fa-facebook h-6 w-6 text-blue-500 mr-2"></i>
+            <a href="https://www.facebook.com/kmkm" target="_blank" class="text-gray-400 hover:text-white">facebook.com/kmkm</a>
+        </li>
+        <li class="flex items-center">
+            <i class="fab-solid fa-at h-6 w-6 text-blue-500 mr-2"></i>
+            <a href="https://www.facebook.com/kmkm" target="_blank" class="text-gray-400 hover:text-white">www.kursusmahirkitab.com</a>
+        </li>
+    </ul>
+</div>
+
+        
+        <!-- Quick Links -->
+        <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-lg font-semibold">Tautan Cepat</h3>
+            <ul class="mt-4 space-y-2">
+                <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                <li><a href="#courses" class="text-gray-400 hover:text-white">Courses</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                <li><a href="#register" class="text-gray-400 hover:text-white">Daftar Sekarang</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-10 border-t border-gray-700 pt-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 KMKM - Kursus Mahir Kitab Al-Mabruk. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
